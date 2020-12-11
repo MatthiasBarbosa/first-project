@@ -28,3 +28,12 @@ body {
     color: white;
     border: 1px solid white;
   }
+
+
+  #static {
+    background: white;
+    position: relative;
+    top: -10px;
+    left: 30px;
+    width: 100px;
+  }
