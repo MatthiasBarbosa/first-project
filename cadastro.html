@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Cadastre-se</h1>
+    <form>
+        <label for="fname">Nome:</label>
+        <input type="text"> <br>
+        <label for="email">Email:</label>
+        <input type="email"> <br>
+        <label for="password">Senha:</label>
+        <input for="password"> <br>
+        <label for="file">Escolha uma foto:</label>
+        <input type="file"> <br>
+        <label for="cor">Selecione sua cor:</label>
+        <input type="radio" name="cor" id="amarelo" value="amarelo"> <label for="radio">Amarelo</label>
+        <input type="radio" name="cor" id="branco" value="branco"> <label for="radio">Branco</label>
+        <input type="radio" name="cor" id="pardo" value="pardo"> <label for="radio">Pardo</label>
+        <input type="radio" name="cor" id="negro" value="negro"> <label for="radio">Negro</label>
+        <input type="radio" name="cor" id="não quero responder" value="não quero responder"> <label for="radio">Não quero responder</label> <br>
+        <label for="estados">Selecione um Estado:</label>
+        <select name="estados" id="estados">
+            <option value="estados">Alagoas</option>
+        </select> <br>
+        <label for="comunicação">Escolha um ou mais meios de comunicação:</label>
+        <input type="checkbox" id="música" name="música" value="música">
+        <label for="música">Música</label>
+        <input type="checkbox" id="televisão" name="televisão" value="televisão">
+        <label for="televisão">Televisão</label>
+        <input type="checkbox" id="rádio" name="rádio" value="rádio">
+        <label for="rádio">Rádio</label> <br>
+        <label for="obs">Observações:</label>
+        <textarea id="obs" name="observações"></textarea> <br>
+        <input type="submit" value="Enviar">
+        <input type="submit" value="Desfazer alterações">
+    </form>
+</body>
+</html>
