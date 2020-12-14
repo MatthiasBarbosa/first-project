@@ -2,17 +2,16 @@
 <html>
 <head>
     <meta charset='utf-8'>
+    <link rel="stylesheet" href="cadastro.css">
     <title>Cadastro</title>
 </head>
 <body>
+    <form action="confirm.html" method="GET">
     <h1>Cadastre-se</h1>
-    <form>
-        <label for="fname">Nome:</label>
-        <input type="text"> <br>
-        <label for="email">Email:</label>
-        <input type="email"> <br>
-        <label for="password">Senha:</label>
-        <input for="password"> <br>
+    </form>
+        Nome:<input type="text" name="nome" id="nome" size="50px" required placeholder="Nome"> <br>
+        Email:<input type="email" name="email" id="email" size="50px" required placeholder="Email"> <br>
+        Senha:<input for="password" name="senha" id="senha" size="50px" minlength="8" maxlength="12" required placeholder="Senha"> <br>
         <label for="file">Escolha uma foto:</label>
         <input type="file"> <br>
         <label for="cor">Selecione sua cor:</label>
@@ -35,7 +34,7 @@
         <label for="obs">Observações:</label>
         <textarea id="obs" name="observações"></textarea> <br>
         <input type="submit" value="Enviar">
-        <input type="submit" value="Desfazer alterações">
+        <input type="reset" value="Desfazer alterações">
     </form>
 </body>
 </html>
