@@ -1,0 +1,30 @@
+html {
+    background-color: cadetblue;
+}
+
+body {
+    max-width: 580px;
+    margin: auto;
+    text-align: justify;
+    padding: 20px;
+    background-color: cyan;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-weight: 600;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+input, textarea, select, label {
+    text-align: justify;
+    margin-top: 3vh;
+}
+
+textarea {
+    height: 20vh;
+    width: 30vh;
+    border: 0;
+}
