@@ -1,11 +1,27 @@
 table, tr, th, td {
     border: 1px solid #000000;
-    width: 20px;
+    width: 2px;
     align-self: center;
+    font-weight: 700;
   }
+
+table {
+    width: 40vw;
+}
 
   body {
       text-align: center;
       display: flex;
       flex-direction: column;
+  }
+
+  section {
+      display: flex;
+  }
+
+  div {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      width: 50vw;
   }
