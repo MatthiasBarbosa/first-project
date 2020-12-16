@@ -9,7 +9,7 @@ h1 {
     grid-template-rows: repeat(2, 200px);
     grid-gap: 15px;
     justify-content: center;
-    background-color: darkslateblue;
+    background-color: rgb(50, 40, 100);
     padding: 65px;
 }
 
