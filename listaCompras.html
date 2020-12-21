@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lista de Compras</title>
+    <link rel='stylesheet' href='listaCompras.css'>
+    <script src='listaCompras.js'></script>
+</head>
+<body>
+    <div class="content"></div>
+        <h1>Lista de Compras</h1>
+        <table border="1">
+            <thead>
+                <th>Item</th>
+                <th>Valor (R$)</th>
+            </thead>
+            <tbody id="list"></tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td id="soma"></td>
+                </tr>
+            </tfoot>
+        </table>
+
+    <div>
+        <input type="text" id="new-item">
+        <input type="text" id="value-item">
+        <button id="add-item" type="submit" onclick="addItem()">Add Item</button>
+    </div>
+    <script src="./listaCompras.js"></script>
+</body>
+</html>
