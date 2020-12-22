@@ -1,38 +1,47 @@
-h4 {
+h4{
     font-size: 1.8rem;
     text-shadow: 1px 2px 30px rgba(19, 18, 18, 0.54);
     color: #333;
 }
 
-a {
+a{
     text-decoration: none;
     font-size: 1.2rem;
-    color: rgba(20, 175, 236);
-
+    color: rgb(20, 175, 236);
     animation: slideinIcon;
     animation-duration: 1.5s;
 }
 
-div {
+div{
     width: 50vw;
-    margin: 28vw auto;
+    margin: 28vh auto;
     padding: 5vw;
     text-align: center;
-    color: black;
-
-    box-shadow: 1px 2px 10px black;
-
-    animation: slidedin;
-    animation-duration: 2s;
+    color: #333;
+    box-shadow: 1px 2px 10px rgba(32, 31, 31, 0.7);
+    animation: slidein;
+    animation-duration: 1.5s;
 }
 
-@keyframes slidedin {
-    from {
-        margin-top: 80vh;
-        width: 60vw;
-    }
+i{
+    margin-right: 5px;
+}
 
-    to {
+@keyframes slidein{
+    from{
+        margin-top: 80vh;
+        width: 60vw
+    }
+    to{
         width: 80vw;
+    }
+}
+
+@keyframes slideinIcon{
+    from{
+        margin-top: 50vh;
+    }
+    to{
+        border-bottom: 1px solid springgreen;
     }
 }

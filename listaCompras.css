@@ -1,0 +1,59 @@
+body{
+    background: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.content{
+    width: 60vw;
+    margin: 0 auto;
+}
+
+table{
+    text-align: center;
+    padding: 5px;
+    width: 60vw;
+    font-size: 1.2rem;
+}
+
+#valor, #soma{
+    color: cyan;
+}
+
+#add{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 58vw;
+    align-items: center;
+    border: 3px dashed black
+    justify-items: left;
+    padding: 5px;
+}
+
+input{
+    height: 3vh;
+    margin: 3px;
+    border: 0;
+}
+
+input:active{
+    border: 0;
+}
+
+button{
+    border: 0;
+    background: wheat;
+    color:black;
+    width: 10   vw;
+    height: 4vh;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.7;
+}
