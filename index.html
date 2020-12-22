@@ -4,57 +4,80 @@
         <meta charset="uft-8">
         <title>Matt</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <table>
-            <tr>
-                 <th>Alguma</th>
-                 <th>Coisa</th>
-            </tr>
-            <tr>
-                <th>Muito</th>
-                <th>Estranha</th>
-            </tr>
-        </table>
-        <h1>Matthias Barbosa</h1>
-        <h2>matthias.barbosa@hotmail.com</h2>
-        <p>Estudando sobre Web-Designer. Recapitulando, apesar das dificuldades, mas nunca vou para-lo.</p>
-        <ul>O que havia aprendido foi:
-            <li>A Introdução</li>
-            <li>As Tags</li>
-            <li>O CSS</li>
-        </ul>
-        <div id="static">
-            Esse é o tal do "Static"
-        </div>
-        <p>Você gostou de saber sobre o que eu falei?</p>
-        <form>
-            <button>
-                sim, você é muito esperto!
-            </button>
-            <button>
-                não, porque falou pouquissíma coisa.
-            </button>
-        </form>
+        <header>
+            <img class="avatar" src="https://avatars0.githubusercontent.com/u/75785099?s=460&v=4" alt="Perfil">
+            <h1 class="title">Matthias B.</h1>
+            <h2 class="subtitle">Web Developer</h2>
+            <ul class="contato">
+                <li>
+                    <a href="https://github.com/MatthiasBarbosa" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailton:matthias.barbosa@hotmail.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+            <a href="#sobre" id="down">
+                <i class="fa fa-chevron-down"></i>
+            </a>
+        </header>
+        <section id="sobre">
+            <div id="about-me">
+                <h1>Sobre Mim</h1>
+                <p>Estudando sobre Web-Designer. O meu objetivo é melhorar as minhas habilidades em criar sites.</p>
+            </div>
+            <ul id="lista">
+                <li>A Introdução</li>
+                <li>Teoria das Cores</li>
+                <li>Anatomia dos Tipos</li>
+                <li>Figma</li>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
         <nav>
+            <ul id="atividades">
             <h2>Atividades</h2>
-            <ul class="lista">
                 <li>
                     <a href="./tabela.html" target="_blank" rel="noopener noreferrer">
-                    tabela
-                </a> <br>
+                        Tabela
+                </a>
                     <a href="./cadastro.html" target="_blank" rel="noopener noreferrer">
-                    cadastro
-                </a> <br>
+                        Cadastro
+                </a>
                     <a href="./album.html" target="blank" rel="noopener noreferrer">
-                    álbum
-                </a> <br>
+                        Álbum
+                </a>
                     <a href="./todo.html" target="blank" rel="noopener noreferrer">
-                    Todo List
+                        Todo List
+                </a>
+                    <a href="./listaCompras.html" target="blank" rel="noopener noreferrer">
+                        Lista de Compras
                 </a>
                 </li>
             </ul>
         </nav>
-    <script type="text/javascript" src="projeto.js"></script>
+        <footer>
+            <p>
+                Desenvolvido por
+                <a href="https://github.com/MatthiasBarbosa" target="_blank">
+                    Matthias B.
+                </a>
+            </p>
+        </footer>
+        <button id="btn">Tema</button>
+        <script src="index.js"></script>
     </body>
 </html>

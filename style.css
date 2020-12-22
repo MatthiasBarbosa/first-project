@@ -1,39 +1,156 @@
-body {
-    background-image: url(image2.jpg)
-  }
-  
-  h1 {
-    color: cyan;
-    text-align: center;
-    font-weight: 300;
-  }
-  
-  h2 {
-    color: rgb(255, 255, 255);
-  }
-  
-  ul {
-    color: rgb(255, 255, 255);
-    list-style: square;
-  }
+body{
+  background: rgb(123, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  --color1: rgb(33, 156, 156);
+  --color2: rgb(14, 95, 95);
+}
 
-  
-  p {
-    color: cadetblue;
-    font-family: verdana;
-    font-size: 20px;
-  }
+header{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 
-  table, tr, th, td {
-    color: white;
-    border: 1px solid white;
-  }
+.avatar{
+  width: 14vw;
+  border-radius: 100px;
+}
 
+.title{
+  font-size: 2.2rem;
+  margin: 5px 0;
+  animation-duration: 1.5s;
+  animation-name: slidein;
+}
 
-  #static {
-    background: white;
-    position: relative;
-    top: -10px;
-    left: 30px;
-    width: 100px;
+.subtitle{
+  font-weight: 300;
+  font-size: 1.4rem;
+  margin: 0;
+  animation-duration: 1.5s;
+  animation-name: slidein;
+}
+
+.contato{
+  padding: 0;
+  animation-duration: 1.5s;
+  animation-name: slidein;
+}
+
+.contato li{
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.contato i{
+  color: var(--color1);
+  font-size: 1.6rem;
+}
+
+.contato i:hover{
+  color: var(--color2);
+}
+
+#down{
+  color: var(--color1);
+  font-size: 1.4rem;
+}
+
+#down:hover{
+  color: var(--color2);
+}
+
+#sobre{
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--color1);
+}
+
+#sobre p{
+  width: 70vw;
+  margin-left: 50px;
+}
+
+#about-me{
+  display: flex;
+  flex-direction: column;
+}
+
+#about-me h2{
+  margin-left: 5vw;
+}
+
+#lista{
+  width: 20vw;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#lista li{
+  font-weight: 700;
+  padding: 10px 0;
+  list-style: none;
+  cursor: default;
+}
+
+#lista li:hover{
+  background-color: rgb(14, 95, 95);
+  border-radius: 20px;
+}
+
+#atividades{
+  height: 50vh;
+  text-align: center;
+  border-top: 1px solid rgb(33, 156, 156);
+}
+
+#atividades li{
+  list-style: none;
+  padding: 5px;
+}
+
+#atividades a{
+  text-decoration: none;
+  color: var(--color1);
+  font-size: 1.2rem;
+}
+
+#atividades a:hover{
+  color: var(--color2);
+  text-decoration: underline;
+  transition: all 0.9s ease;
+}
+
+footer{
+  background-color: rgb(61, 61, 61);
+  color: wheat;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  margin: -8px;
+  text-align: center;
+}
+
+footer a{
+  color: var(--color1);
+}
+
+@keyframes slidein{
+  from{
+    margin-top: 50vw;
+    width: 100vw;
   }
+  to{
+    margin-left: 0;
+  }
+}
+
+#btn{
+  position: fixed;
+  right: 1vw;
+  top: 1vw;
+}
